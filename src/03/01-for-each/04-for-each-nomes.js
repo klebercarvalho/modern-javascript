@@ -4,3 +4,4 @@ function imprimeNome(nome) {
 }
 
 nomes.forEach(imprimeNome);
+// maria, jose, joao

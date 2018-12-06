@@ -4,4 +4,4 @@ canais.forEach((canal) => {
   console.log(canal);
 });
 
-console.log(canais);
+// Globo, SBT, SBT
