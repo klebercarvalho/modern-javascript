@@ -1,3 +1,5 @@
+const { inspect } = require('util');
+
 const alunos = [
   { nome: 'joão', idade: 15 },
   { nome: 'josé', idade: 18 },
@@ -35,4 +37,16 @@ alunos.forEach((alunos) => {
   console.log(`alunos ${alunos.nome}`);
   console.log(`alunos ${alunos.idade}`);
 });
+
+
+console.log('# reduce');
+const fn = (acc, aluno) => {
+  const output = Object.values(aluno).join();
+  return acc.concat(`, ${output}`);
+};
+
+const lista = alunos.reduce(fn, '');
+
+console.log(`aluno ${lista}`);
+console.log(`Inspect ${inspect(alunos, { showHidden: false, depth: null })}`);
 console.log('');

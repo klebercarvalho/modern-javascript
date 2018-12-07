@@ -13,7 +13,3 @@ for (let i = 0; i < alunos.length; i++) {
     console.log(`aluno de maior ${alunos[i].idade}`);
   }
 }
-
-
-console.log(`aluno ${alunos}`);
-console.log(`alunos de maior ${alunosDeMaior}`);
